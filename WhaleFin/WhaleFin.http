@@ -1,0 +1,6 @@
+@WhaleFin_HostAddress = http://localhost:5110
+
+GET {{WhaleFin_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
