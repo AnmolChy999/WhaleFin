@@ -1,4 +1,3 @@
-version: "3.9"
 
 services:
   postgres:
@@ -13,18 +12,6 @@ services:
     volumes:
       - pg_data:/var/lib/postgresql
 
-  # mongo:
-  #   image: mongo:latest
-  #   container_name: mongodb
-  #   environment:
-  #     MONGO_INITDB_ROOT_USERNAME: mongoroot
-  #     MONGO_INITDB_ROOT_PASSWORD: mongoroot
-  #   ports:
-  #     - "27017:27017"
-  #   volumes:
-  #     - mongo_data:/data/db
-
 # Named volumes managed by Docker
 volumes:
   pg_data:
-  mongo_data:
