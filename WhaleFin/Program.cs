@@ -9,6 +9,8 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 
+
+DotNetEnv.Env.Load();
 builder.Services.AddDbContext<ApplicationDBContext>( options =>
 {
     var dbHost = Environment.GetEnvironmentVariable("DB_HOST");
